@@ -1,0 +1,126 @@
+.call{
+  h1{
+    height:140px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 140px;
+  }
+  ul{
+    height:370px;
+    display: flex;
+    justify-content: space-between;
+    background:url(../images/bg_call.jpg)no-repeat;
+    background-position: 100% 48%;
+    li{
+      width:218px;
+      height:370px;
+      padding:0 26px;
+      text-align: center;
+      position: relative;
+      margin:0;
+      border:1px solid rgba(255,255,255,0);
+      img{
+       
+        padding-top:94px;
+        transition: all 0.4s;
+      }
+      p{
+        font-size: 12px;
+        text-align: left;
+        width:220px;
+        position: absolute;
+        top:250px;
+        line-height: 26px;
+        color:#808080;
+        transition: all 0.4s;
+        text-align: justify;
+      }
+      h4{
+        position: absolute;
+        top:216px;
+        font-size: 16px;
+        width:220px;
+        transition: all 0.4s;
+      }
+      .num{
+        display:block;
+        width: 44px;
+        height:44px;
+        line-height:44px;
+        left:50%;
+        margin-left:-22px;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 16px;
+        color:#003d84;
+        position: absolute;
+        top:174px;
+        transition: all 0.4s;
+      }
+      .num:after{
+        content:'';
+        width:8px;
+        height:8px;
+        border-radius: 10px;
+        background:#003d84;
+        position: absolute;
+        top:0px;
+        left:19px;
+      }
+      .num:before{
+        content:'';
+        width:60px;
+        height:60px;
+        background:url(../images/numc.png)no-repeat center;
+        position: absolute;
+        left:-8px;
+        top:-8px;
+        display:none;
+      }
+    }
+    li:hover{
+      background:#f0f7fd;
+      border:1px solid #317fcb;
+      border-radius: 4px;
+      img{
+        padding-top:44px;
+      }
+      p{
+        top:230px;
+      }
+      .num{
+        top:164px;
+        width: 44px;
+        height:44px;
+        line-height:40px;
+        background:#f85e05;
+        border-radius: 60px;
+        left:50%;
+        margin-left:-22px;
+        text-align: center;
+        color:#fff;
+      }
+      .num:after{
+        display:none;
+      }
+      .num:before{
+        display:block;
+      }
+      h4{
+        top:108px;
+      }
+    }
+  }
+  h2{
+    font-size: 36px;
+    color:#f85e05;
+    text-align: center;
+    margin-top: 78px;
+    margin-bottom:30px;
+  }
+  .des{
+    text-align: center;
+    font-size: 14px;
+    
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>中玺九合</title>
+  <!-- 判断是手机还是pc -->
+  <script>
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+    if (IsPC()) {
+        // 跳转到电脑板的网址
+        window.location.href = '../../work/work1.html';
+    }
+</script> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=750,target-densitydpi=320,inital-scale=2.0,maximum-scale=1.0,user-scalable=no;" />
+  <link rel="stylesheet" href="../lib/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../lib/jquery-3.2.1.min.js"></script>
+  <!-- bootsrap扩展功能需要的插件<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script> -->
+  <script src="../lib/bootstrap.min.js"></script>
+  <script src="../js/index.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md cf ">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+          <!-- <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="../work.html"><span>01</span>WORK</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " href="../about.html"><span>02</span>ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../client.html"><span>03</span>CLIENT</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="../join.html"><span>04</span>JOIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html"><span>05</span>CONTACT</a>
+            </li>       
+          </ul> -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " href="../index.html">HOME<span>首页</span></a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../work.html">WORK<span>项目</span></a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link " href="../about.html">ABOUT<span>关于我们</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../client.html">CLIENT<span>合作伙伴</span></a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link " href="../join.html">JOIN<span>加入我们</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../contact.html">CONTACT<span>联系我们</span></a>
+            </li>       
+          </ul>
+          <a href="javascript:;" class="close"><img src="../img/close.png" alt=""></a>
+        </div> 
+      </nav>
+<div class="container-1">
+  <div class="workm">
+    <img src="../img/work/work1.jpg" alt="">
+    <h2>国家大剧院官网</h2>
+    <p style="text-align: justify">国家大剧院始终秉承“人民性、艺术性、国际性”宗旨，坚持艺术为民、坚定文化自信，以独具特色的运作模式和发展理念，描绘着中国在世界艺术版图上的时代画卷。国家大剧院官方网站作为国家大剧院对外宣传的重要途径，2018年国家大剧院委托中玺九合针对官方网站进行视觉、网站功能的升级优化工作，要求新网站在增加网站功能、提升用户体验的同时，视觉上要表现大剧院“人民性、艺术性、国际性”的宗旨。
+      </p>
+      <img class="simg" src="../../img/djy_1.jpg" alt="">
+      <p style="text-align: justify"> 为满足需求，在视觉表达方面提炼国家大剧院建筑主体元素，形成异形banner、标题icon以及背景元素，形成大剧院特有的视觉语言。功能方面保留购票推荐系统并变化购票系统逻辑，由剧目堆砌变为时间排序筛选样式，便于用户查询购买。重新整合网站内容，在首页设立功能板块“演出推荐”、“殿堂开放”、“普及活动”、“资讯动态”等，使得网站跟便于国家大剧院宣传和用户浏览使用。目前新版网站在搭建过程中，敬请期待！</p>
+     <img class="simg" src="../../img/djy_2.jpg" alt="">
+  </div>
+  <div class="bottom cf">
+    <a href="javascript:;" class="prev left">PREV</a>
+    <a href="work2.html" class="next right">NEXT</a>
+  </div>
+</div>
+
+</body>
+</html>

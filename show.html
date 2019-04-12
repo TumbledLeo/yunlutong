@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MAXHUB 2019 新品发布会</title>
+</head>
+<body style="width:100%;">
+  <style>
+    img {
+  border: none;
+  vertical-align: middle;
+}
+ol, ul, li {
+  list-style: none;
+}
+
+ html,body,ul{
+  padding:0;
+  margin:0;
+}
+  </style>
+  <img src="img/1.jpg" alt="" style="width:100%;">
+  <div class="wrap"style="width:100%;height:100%;position:fixed;background:#000;top:0;left:0;">
+    <p style="color:#fff;font-size: 24px;text-align: center;position:absolute;top:100px;width:100%;">请竖屏观看</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+  
+  setInterval(function(){
+    var width = document.documentElement.clientWidth;
+    var height = document.documentElement.clientHeight;
+    
+    if(width>height){
+      $('.wrap').css('display','block');　
+    }else{
+      $('.wrap').css('display','none');　
+    }
+  },1000);
+  </script>
+</body>
+</html>
