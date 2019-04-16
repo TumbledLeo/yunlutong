@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body {
+  background: #fff;
+  height: 100%;
+  /* 设置父元素为flex布局 */
+  display: flex;
+  /* 设置子元素的排列方向 */
+  flex-direction: column;
+  /* 设置子元素在该方向上的对齐方式 */
+  justify-content: space-between; }
+
+.ts {
+  width: 970px; }
+  .ts img {
+    margin: 80px auto 0;
+    display: block; }
+  .ts p {
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+    font-size: 18px; }
+  .ts p.small {
+    font-size: 12px;
+    color: #f85e05;
+    line-height: 10px;
+    margin-top: 0; }
+
+footer {
+  position: fixed;
+  bottom: 0; }

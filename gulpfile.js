@@ -51,7 +51,40 @@ gulp.task('html', function () {
         .pipe(gulp.dest(app.distPath))
         .pipe(connect.reload())
 });
-
+gulp.task('html1', function () {
+    var options = {
+        removeComments: true,//清除HTML注释
+        collapseWhitespace: true,//压缩HTML
+        collapseBooleanAttributes: true,//省略布尔属性的值 <input checked="true"/> ==> <input />
+        removeEmptyAttributes: true,//删除所有空格作属性值 <input id="" /> ==> <input />
+        //removeScriptTypeAttributes: true,//删除<script>的type="text/javascript"
+        //removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
+        //minifyJS: true,//压缩页面JS
+        minifyCSS: true//压缩页面CSS
+    };
+    gulp.src(app.srcPath + 'ty/*.html')
+        .pipe(gulp.dest(app.buildPath+ 'ty/'))
+        .pipe(htmlmin(options))
+        .pipe(gulp.dest(app.distPath+ 'ty/'))
+        .pipe(connect.reload())
+});
+gulp.task('html2', function () {
+    var options = {
+        removeComments: true,//清除HTML注释
+        collapseWhitespace: true,//压缩HTML
+        collapseBooleanAttributes: true,//省略布尔属性的值 <input checked="true"/> ==> <input />
+        removeEmptyAttributes: true,//删除所有空格作属性值 <input id="" /> ==> <input />
+        //removeScriptTypeAttributes: true,//删除<script>的type="text/javascript"
+        //removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
+        //minifyJS: true,//压缩页面JS
+        minifyCSS: true//压缩页面CSS
+    };
+    gulp.src(app.srcPath + 'qyfw/*.html')
+        .pipe(gulp.dest(app.buildPath+ 'qyfw/'))
+        .pipe(htmlmin(options))
+        .pipe(gulp.dest(app.distPath+ 'qyfw/'))
+        .pipe(connect.reload())
+});
 /*任务4 把scss编译成css*/
 gulp.task('scss', function () {
     gulp.src(app.srcPath + 'style/*.scss')
@@ -61,7 +94,14 @@ gulp.task('scss', function () {
         .pipe(gulp.dest(app.distPath + 'css/'))
         .pipe(connect.reload())
 });
-
+gulp.task('scss1', function () {
+    gulp.src(app.srcPath + 'style/qyfw/*.scss')
+        .pipe(scss())
+        .pipe(gulp.dest(app.buildPath + 'css/qyfw/'))
+       .pipe(cssmin())//压缩
+        .pipe(gulp.dest(app.distPath + 'css/qyfw/'))
+        .pipe(connect.reload())
+});
 /*任务5 移动js*/
 gulp.task('js', function () {
     gulp.src(app.srcPath + 'js/**/*.js')
@@ -131,7 +171,7 @@ gulp.task('mobile-js', function () {
 /*同时执行多个任务【其他任务的名称】
 * 当bulid执行时，会把数组中的所有任务执行了
 * */
-gulp.task('build', ['lib', 'html', 'scss', 'js', 'image', 'media', 'mobile', 'mobile-css', 'mobile-js', 'mobile-image']);
+gulp.task('build', ['lib', 'html','html1','html2', 'scss','scss1', 'js', 'image', 'media', 'mobile', 'mobile-css', 'mobile-js', 'mobile-image']);
 
 /*定义server服务
 * 搭建一个服务器，设置运行构建目录
@@ -147,13 +187,14 @@ gulp.task('server', ['build'], function () {
 
     // 监听哪些任务
     gulp.watch(app.srcPath + '*.html', ['html']);
-    gulp.watch(app.srcPath + 'm/*.html', ['mobile']);
+    gulp.watch(app.srcPath + 'ty/*.html', ['html1']);
+    gulp.watch(app.srcPath + 'qyfw/*.html', ['html2']);
     gulp.watch(app.srcPath + 'js/**/*.js', ['js']);
-    gulp.watch(app.srcPath + 'm/js/**/*.js', ['mobile-js']);
+
     gulp.watch(app.srcPath + 'images/**/*', ['image']);
-    gulp.watch(app.srcPath + 'm/images/**/*', ['mobile-image']);
+
     gulp.watch(app.srcPath + 'style/**/*.scss', ['scss']);
-    gulp.watch(app.srcPath + 'm/style/**/*.scss', ['mobile-css']);
+    gulp.watch(app.srcPath + 'style/qyfw/*.scss', ['scss1']);
     open('http://localhost:8888');
 });
 gulp.task('default', ['server']);

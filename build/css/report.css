@@ -7,7 +7,7 @@ body {
   position: relative;
   top: 0;
   width: 100%;
-  height: 224px;
+  height: 200px;
   margin: 0 auto;
   background: url(../images/bg.jpg) no-repeat center;
   overflow: hidden; }
@@ -21,8 +21,7 @@ body {
   margin-left: -180px;
   left: 50%;
   border-radius: 322px;
-  top: 44px;
-  box-shadow: 1px 1px 59px #91aabf; }
+  top: 22px; }
 
 /* ---------- CASE ---------- */
 #watch .case {
@@ -30,7 +29,7 @@ body {
   height: 100%;
   border-radius: 50%;
   /* background: #111 conic-gradient(#666, #111, #666, #111, #666, #111, #666, #111, #666); */
-  background: url(../images/biao.png) no-repeat center;
+  background: url(../images/biao.png) no-repeat top;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
 
 /* ---------- DIAL ---------- */
@@ -331,7 +330,7 @@ body {
   /* left: 5.9997px; */
   border-radius: 50%;
   /* box-shadow: 0 28.57143px 10px rgba(0, 0, 0, 0.5) inset; */
-  background: #3265b8;
+  background: #158bb5;
   width: 150px;
   height: 150px;
   left: 50%;
@@ -422,36 +421,6 @@ body {
   background: #181818;
   border: 2px solid #3b3c38;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.75); }
-
-#watch .hands .s div, #watch .hands .s div:before, #watch .hands .s div:after {
-  position: absolute;
-  left: 50%;
-  width: 22px;
-  margin-left: -2px;
-  border-radius: 1px;
-  background: url(../images/zhen.png) no-repeat; }
-
-#watch .hands .s div {
-  bottom: 100%;
-  height: 96px;
-  background: url(../images/zhen.png) no-repeat; }
-
-#watch .hands .s div:before {
-  content: '';
-  top: 100%;
-  height: 55.02063px;
-  margin-top: 14.0007px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); }
-
-#watch .hands .s div:after {
-  content: '';
-  top: 100%;
-  width: 12.0012px;
-  height: 20px;
-  margin-left: -5.9997px;
-  margin-top: 36.0036px;
-  border-radius: 2px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4); }
 
 body {
   background: #f8fafc;
@@ -644,3 +613,14 @@ li {
     font-size: 20px; }
     .main.s .top p span {
       font-weight: bold; }
+
+#watch .case .hand {
+  width: 200px;
+  height: 10px;
+  width: 180px;
+  height: 3px;
+  background: url(../images/zhen.png) no-repeat left;
+  position: absolute;
+  left: 90px;
+  bottom: 186px;
+  transition: all 1s; }

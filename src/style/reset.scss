@@ -79,50 +79,52 @@ a{
       }
     }
   }
-  .s_nav{
-    width:100%;
-    padding:40px 0 0;
-    background:#f0f7fd;
-    position: absolute;
-    top: 99px;
-    z-index: 9;
-    .qyfw,.yxl,.flzs,.kzzx{
-      width:836px;
-      margin:0 auto;
-      ol{
-        display: flex;
-        justify-content: space-between;
-        height:110px;
-        li{
-          text-align: center;
-          p{
-            margin-top:10px;
-          }
-        }
-        li:hover{
-          p{
-            color:#2e79bd;
-          }
+}
+.s_nav{
+  width:100%;
+  padding:40px 0 0;
+  background:#f0f7fd;
+  // background:rgba(0,61,132,0.9);
+  position: absolute;
+  top: 99px;
+  z-index: 9;
+  .qyfw,.yxl,.flzs,.kzzx{
+    width:836px;
+    margin:0 auto;
+    ol{
+      display: flex;
+      justify-content: space-between;
+      height:110px;
+      li{
+        text-align: center;
+        p{
+          margin-top:10px;
         }
       }
-      .two{
-        width:310px;
+      li:hover{
+        p{
+          color:#2e79bd;
+        }
       }
     }
-    .yxl{
-      ol{
-        width:350px;
-      }
+    .two{
+      width:310px;
     }
-    .flzs{
-      ol{
-        width:590px;
-      }
+  }
+  .yxl{
+    ol{
+      width:350px;
     }
-    .kzzx{
-      ol{
-        width:944px;
-      }
+  }
+  .flzs{
+    ol{
+      width:590px;
+    }
+  }
+  .kzzx{
+    width:970px;
+    ol{
+      width:970px;
     }
   }
 }
