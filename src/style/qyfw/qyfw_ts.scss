@@ -1,13 +1,6 @@
 body{
   background:#fff;
   height:100%;
-   /* 设置父元素为flex布局 */
-   display: flex;
-   /* 设置子元素的排列方向 */
-   flex-direction: column;
-   /* 设置子元素在该方向上的对齐方式 */
-   justify-content: space-between
-
 }
 .ts{
   width:970px;
@@ -27,6 +20,26 @@ body{
     color:#f85e05;
     line-height:10px;
     margin-top:0;
+  }
+}
+.pdf{
+  width:970px;
+  margin:0 auto;
+  position: relative;
+  .pdf_down{
+    position: absolute;
+    top:50px;
+    right:0;
+  }
+  .pdf_bg{
+    position: absolute;
+    top:120px;
+    left:50%;
+    margin-left:-485px;
+    width:870px;
+    height:500px;
+    background:url(../../images/pdf_bg.png)no-repeat center;
+    border: 1px dashed #d0d7dd;
   }
 }
 footer{

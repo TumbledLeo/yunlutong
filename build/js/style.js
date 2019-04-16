@@ -27,7 +27,8 @@ $(function () {
   //角度变化
   function jude() {
     var num = $('.text').html();
-    var jiao = 'rotate(' + num + 'deg)';
+    var j = num / 100 * 180;
+    var jiao = 'rotate(' + j + 'deg)';
     $('.zhen').css('transform', jiao);
   }
   jude();

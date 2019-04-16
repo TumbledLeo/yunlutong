@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>云律通</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="top">
+    <div class="inner">
+        <img src="images/logo_login.png" alt="">
+        <p><a href="index.html" target="_block">首页</a><a href="javascript:;" class="in">注册</a></p>
+    </div>
+    
+  </div>
+  <div class="wrap">
+    <div class="inner">
+        <div class="tit">
+            <h1>云律通</h1>
+            <p>让法律服务人人可及</p>
+        </div>
+        <div class="new" style="display:none;">
+          <h2>用户注册</h2>
+          <p>已注册请点击<a href="javascript:;" class="dl">登录</a></p>
+          <form>
+            <input class="tel"type="text"id="tel1" placeholder="手机号" onblur="checkPhone()">
+            <input class="yanz" type="text"placeholder="验证码" maxlength="4" pattern="[0-9]*"><a href="" class="get get_code btn_disabled">获取验证码</a>
+            <input class="tel" type="text"placeholder="设置密码 密码长度6-20个字符">
+            <input class="sub"type="submit" value="同意协议并注册">
+            <label for="">
+                <input type="checkbox">
+                <p><a href="">《注册协议》</a></p>
+            </label>
+          </form>
+        </div>
+        <div class="denglu" style="display:block;">
+          <a href="javascript:;" class="ma"><img src="images/ma.png" alt=""></a>
+            <ol class="tabs">
+              <li class="tab"><a href="javascript:;">账号登录</a></li>
+              <li class="tab"><a href="javascript:;">短信验证登录</a></li>
+            </ol>
+            <ul class="tabContents">
+              <li class="tabContent">
+                <input class="tel"type="text" placeholder="手机号/邮箱">
+                <input class="tel" type="text"placeholder="密码">
+                <input class="sub"type="submit" value="登录">
+                <p class="jiao "><a href="javascript:;" class="in">注册</a><a href="">忘记密码</a></p>
+              </li>
+              <li class="tabContent">
+                  <input class="tel"type="text" placeholder="手机号" id="tel2" onblur="checkPhone1()">
+                  <input class="yanz" type="text"placeholder="验证码" maxlength="4" pattern="[0-9]*"><a href="" class="get get_code btn_disabled">获取验证码</a>
+                  <input class="sub"type="submit" value="登录">
+                  <p class="jiao "><a href="javascript:;" class="in">注册</a><a href="">忘记密码</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="dengluma">
+            <a href="javascript:;" class="sma"><img src="images/sma.png" alt=""></a>
+            <ol class="tabs">
+                <li class="tab"><a href="javascript:;">APP扫码登录</a></li>
+                <li class="tab"><a href="javascript:;">微信扫码登录</a></li>
+              </ol>
+              <ul class="tabContents">
+                <li class="tabContent">
+                  <img src="images/wx_ma.jpg" alt="">
+                  
+                  <p>打开云律通APP扫码登录</p>
+                </li>
+                <li class="tabContent">
+                    <img src="images/wx_ma.jpg" alt="">
+                    <p>打开微信扫码登录</p>
+                  </li>
+              </ul>
+        </div>
+    </div>   
+  </div>
+    <footer>
+        <div class="inner" style="position: relative;">
+            <img class="logo"src="images/logo_footer.png" alt="">
+            <ol>
+                <li><a href="">服务支持</a></li>
+                <li><a href="">付费咨询</a></li>
+                <li><a href="">云小律</a></li>
+            </ol>
+            <a href="javascript:;" class="sm">法律声明</a>
+            <p>@备案号22582522</p>
+        </div>  
+    </footer>
+    <script src="lib/jquery/jquery-2.1.1.min.js"></script>
+<script src="js/style.js"></script>
+<script>
+function checkPhone(){ 
+  var phone = document.getElementById('tel1').value;
+  if(!(/^1[34578]\d{9}$/.test(phone))){ 
+      alert("手机号码有误，请重填");  
+      return false; 
+  }else{
+    $('#tel1').parent().find('.get').removeClass('btn_disabled');
+  } 
+  
+}
+function checkPhone1(){
+  var phone1 = document.getElementById('tel2').value;
+  if(!(/^1[34578]\d{9}$/.test(phone1))){ 
+      alert("手机号码有误，请重填");  
+      return false; 
+  }else{
+    $('#tel2').parent().find('.get').removeClass('btn_disabled');
+  }
+}
+</script>
+</body>
+</html>
