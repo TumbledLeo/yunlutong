@@ -221,7 +221,7 @@ header {
           background: #003d84;
           z-index: 9;
           border-radius: 10px;
-          transition: all 1s;
+          transition: all 0.3s;
           opacity: 0; }
           .main .cep ul li .jc .fly img {
             margin-bottom: 6px; }

@@ -33,7 +33,7 @@ $(function () {
   }
   jude();
   function nav() {
-    $('.s_nav li li').hover(function () {
+    $('.s_nav .one li').hover(function () {
       var num = ($(this).index() + 1).toString() + ($(this).index() + 1).toString();
       var cnum = parseInt(num);
       var name = $(this).parent().parent().attr('class');
@@ -45,6 +45,19 @@ $(function () {
       var cnum = parseInt(num);
       var str = 'images/' + name + cnum + '.png';
       $(this).find('img').attr('src', str);
+    });
+    $('.s_nav .two li').hover(function () {
+      if ($(this).index() == 0) {
+        $(this).find('img').attr('src', 'images/qyfw77.png');
+      } else {
+        $(this).find('img').attr('src', 'images/qyfw88.png');
+      }
+    }, function () {
+      if ($(this).index() == 0) {
+        $(this).find('img').attr('src', 'images/qyfw7.png');
+      } else {
+        $(this).find('img').attr('src', 'images/qyfw8.png');
+      }
     });
     $('.s_nav').css('display', 'none');
     $('.s_nav >li').css('display', 'none');
@@ -82,7 +95,7 @@ $(function () {
     });
   }
   nav();
-  // 登录
+  //登录
   $('.dl').click(function () {
     $('.wrap .inner .new').fadeOut();
     $('.wrap .inner .denglu').fadeIn();
@@ -113,7 +126,7 @@ $(function () {
       clearTimeout(timeout);
       timeout = setInterval(function () {
         count_down--;
-        console.log(count_down);
+        // console.log(count_down);
         $(that).text(count_down + '秒重新发送验证');
 
         if (count_down <= 0) {

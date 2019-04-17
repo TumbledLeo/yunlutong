@@ -81,7 +81,7 @@ a {
 .s_nav {
   width: 100%;
   padding: 40px 0 0;
-  background: #f0f7fd;
+  background: rgba(0, 61, 132, 0.9);
   position: absolute;
   top: 99px;
   z-index: 9; }
@@ -113,6 +113,9 @@ a {
   height: 6px;
   width: 100%;
   background: #003d84; }
+
+.s_nav ol li a {
+  color: #fff; }
 
 .header .top {
   background: #fff;
