@@ -57,7 +57,7 @@ a{
 // 头
 
 .header{
-  height:136px;
+  // height:136px;
   .inner{
     width:1200px;
     margin:0 auto;
@@ -89,7 +89,7 @@ a{
   top: 99px;
   z-index: 9;
   .qyfw,.yxl,.flzs,.kzzx{
-    width:836px;
+    width:1210px;
     margin:0 auto;
     ol{
       display: flex;
@@ -212,7 +212,6 @@ label{
     li{
       margin:0;
       a{
-        font-weight: bold;
         font-size: 14px;
         padding-bottom:16px;
       }
@@ -228,6 +227,10 @@ label{
   
 }
 
+}
+.s_nav .qyfw, .s_nav .yxl, .s_nav .flzs, .s_nav .kzzx {
+
+  font-size: 14px;
 }
 footer {
   width:100%;

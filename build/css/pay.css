@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .content {
   width: 970px;
   overflow: hidden; }
@@ -26,11 +27,26 @@
     .content ul .wx {
       background: url(../images/wx.png) no-repeat;
       background-position: 34% 50%; }
+    .content ul .wx:hover {
+      border: 1px solid #2e79bd;
+      background: #f0f7fd url(../images/wx.png) no-repeat;
+      color: #2e79bd;
+      background-position: 34% 50%; }
     .content ul .zfb {
       background: url(../images/zfb.png) no-repeat;
       background-position: 34% 50%; }
     .content ul .yhk {
       background: url(../images/yhk.png) no-repeat;
+      background-position: 34% 50%; }
+    .content ul .zfb:hover {
+      border: 1px solid #2e79bd;
+      background: #f0f7fd url(../images/zfb.png) no-repeat;
+      color: #2e79bd;
+      background-position: 34% 50%; }
+    .content ul .yhk:hover {
+      border: 1px solid #2e79bd;
+      background: #f0f7fd url(../images/yhk.png) no-repeat;
+      color: #2e79bd;
       background-position: 34% 50%; }
   .content .price {
     flex-wrap: wrap; }
@@ -111,21 +127,21 @@
         .info .about .fw_name .all p span {
           font-size: 18px;
           color: #f85e05; }
-  .info .about label {
+  .info .about .label {
     height: 50px;
     line-height: 50px;
     display: block;
     overflow: hidden;
     padding-left: 40px;
     position: relative; }
-    .info .about label p {
+    .info .about .label p {
       display: inline-block;
       height: 50px;
       line-height: 50px;
       text-indent: 10px;
       margin-right: 66px;
       font-size: 14px; }
-    .info .about label input {
+    .info .about .label input {
       width: 20px;
       height: 20px;
       border: none;
@@ -133,16 +149,17 @@
       position: relative;
       left: -20px;
       bottom: 40px; }
-    .info .about label input:after {
-      content: '';
+  .info .about .ck {
+    /*设置选中的input的样式*/
+    /* + 是兄弟选择器,获取选中后的label元素*/ }
+    .info .about .ck label {
+      position: absolute;
+      left: 40px;
+      top: 14px;
       width: 20px;
       height: 20px;
-      background: url(../images/int1.png) no-repeat center;
-      position: absolute;
-      z-index: 99;
-      right: -20px;
-      bottom: -44px; }
-    .info .about label input:checked:after {
+      background: url(../images/int1.png) no-repeat center; }
+    .info .about .ck input:checked + label {
       background: url(../images/int2.png) no-repeat center; }
   .info .about .count {
     border-top: 1px solid #e1e6eb; }
@@ -167,7 +184,7 @@
     font-size: 30px;
     color: #f85e05; }
 
-.info .about.no label {
+.info .about.no .label {
   height: 70px; }
 
 .info .about.no .nofind {
@@ -204,7 +221,7 @@
     line-height: 50px;
     border-bottom: 1px solid #e1e6eb; }
     .arr .about p span {
-      width: 60px;
+      width: 64px;
       display: inline-block;
       text-align: justify;
       text-justify: distribute-all-lines;
@@ -227,11 +244,12 @@
 
 .as {
   text-align: center;
-  height: 380px;
+  height: 348px;
   width: 100%;
   background: #f0f7fd;
   margin-top: 74px;
-  padding-top: 70px; }
+  padding-top: 70px;
+  padding-bottom: 70px; }
   .as h1 {
     width: 420px;
     margin: 0 auto;

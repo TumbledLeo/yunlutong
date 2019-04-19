@@ -28,8 +28,16 @@ $(function () {
     var j=num/100*180;
     var jiao = 'rotate('+j+'deg)';
     $('.zhen').css('transform',jiao);
+
   }
   jude();
+  //首页显示
+  $('.ljjc').hover(function(){
+    $(this).parent().find('.fly').fadeIn('fast');
+    $('.fly').mouseleave(function(){
+      $(this).fadeOut('fast');
+    });
+  });
   function nav(){
     $('.s_nav .one li').hover(function(){
       var num=($(this).index()+1).toString()+($(this).index()+1).toString();
@@ -44,19 +52,19 @@ $(function () {
     var str='images/'+name+cnum+'.png';
     $(this).find('img').attr('src',str);
   });
-  $('.s_nav .two li').hover(function(){
-    if($(this).index()==0){
-      $(this).find('img').attr('src','images/qyfw77.png');
-    }else{
-      $(this).find('img').attr('src','images/qyfw88.png');
-    }
-  },function(){
-    if($(this).index()==0){
-      $(this).find('img').attr('src','images/qyfw7.png');
-    }else{
-      $(this).find('img').attr('src','images/qyfw8.png');
-    }
-  });
+  // $('.s_nav .two li').hover(function(){
+  //   if($(this).index()==0){
+  //     $(this).find('img').attr('src','images/qyfw77.png');
+  //   }else{
+  //     $(this).find('img').attr('src','images/qyfw88.png');
+  //   }
+  // },function(){
+  //   if($(this).index()==0){
+  //     $(this).find('img').attr('src','images/qyfw7.png');
+  //   }else{
+  //     $(this).find('img').attr('src','images/qyfw8.png');
+  //   }
+  // });
   $('.s_nav').css('display','none');
   $('.s_nav >li').css('display','none');
 
@@ -92,6 +100,10 @@ $(function () {
       $('.s_nav >li').stop().slideUp();
       $('.s_nav').stop().fadeOut();
     }
+    $('header').mouseenter(function(){
+      $('.s_nav >li').stop().slideUp();
+      $('.s_nav').stop().fadeOut();
+    });
   });
   }
   nav();

@@ -59,24 +59,23 @@ a {
 .cf {
   zoom: 1; }
 
-.header {
-  height: 136px; }
-  .header .inner {
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    height: 100px; }
-  .header .text {
-    background: #fafafa;
-    width: 100%;
-    height: 30px; }
-    .header .text p {
-      font-size: 12px;
-      line-height: 30px; }
-      .header .text p span {
-        margin: 0 4px; }
-      .header .text p span:last-child {
-        color: #f85e05; }
+.header .inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100px; }
+
+.header .text {
+  background: #fafafa;
+  width: 100%;
+  height: 30px; }
+  .header .text p {
+    font-size: 12px;
+    line-height: 30px; }
+    .header .text p span {
+      margin: 0 4px; }
+    .header .text p span:last-child {
+      color: #f85e05; }
 
 .s_nav {
   width: 100%;
@@ -86,7 +85,7 @@ a {
   top: 99px;
   z-index: 9; }
   .s_nav .qyfw, .s_nav .yxl, .s_nav .flzs, .s_nav .kzzx {
-    width: 836px;
+    width: 1210px;
     margin: 0 auto; }
     .s_nav .qyfw ol, .s_nav .yxl ol, .s_nav .flzs ol, .s_nav .kzzx ol {
       display: flex;
@@ -183,7 +182,6 @@ a {
       .header .top .nav ul li {
         margin: 0; }
         .header .top .nav ul li a {
-          font-weight: bold;
           font-size: 14px;
           padding-bottom: 16px; }
         .header .top .nav ul li a:hover {
@@ -191,6 +189,9 @@ a {
           border-bottom: 2px solid #f85e05; }
       .header .top .nav ul li.active a {
         color: #f85e05; }
+
+.s_nav .qyfw, .s_nav .yxl, .s_nav .flzs, .s_nav .kzzx {
+  font-size: 14px; }
 
 footer {
   width: 100%;

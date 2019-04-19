@@ -9,88 +9,14 @@
   <link rel="stylesheet" href="../css/pay.css">
 </head>
 <body>
+  <div id="header"></div>
   <header class="header">
-    <div class="sell"></div>
-    <div class="top">
-        <div class="inner">
-            <img class="img"src="../images/logo.png" alt="">
-            <label for="">
-                <input type="text">
-                <a href="#"><img src="../images/so1.png" alt=""></a>
-            </label>
-            <div class="user">
-              <img src="../images/user.jpg" alt="">
-            </div>
-            <div class="tel">
-              <p>呼叫律师团<span>01-14725836</span></p>
-            </div>  
-        </div>
-        <div class="wrap">
-              <div class="wnav" style="width:1200px;height:30px;margin:0 auto;position:relative">
-                      <div class="nav">
-                              <ul class="href">
-                                  <li class=""><a href="">首页</a></li>
-                                  <li><a href="">企业服务</a></li>
-                                  <li><a href="">云小律</a></li>
-                                  <li><a href="">云律通媒体</a></li>
-                                  <li><a href="">法律助手</a></li>
-                                  <li><a href="">控制中心</a></li>
-                              </ul>    
-                      </div>
-              </div> 
-              <ol class="s_nav">
-                 <li class="qyfw">
-                    <ol class="one">
-                      <li><a href="#"><img src="../images/qyfw1.png" alt=""><p>合同起草</p></a></li>
-                      <li><a href="#"><img src="../images/qyfw2.png" alt=""><p>智能文书生成</p></a></li>
-                      <li><a href="#"><img src="../images/qyfw3.png" alt=""><p>合同审查</p></a></li>
-                      <li><a href="#"><img src="../images/qyfw4.png" alt=""><p>律师函</p></a></li>
-                      <li><a href="#"><img src="../images/qyfw5.png" alt=""><p>诉讼仲裁</p></a></li>
-                      <li><a href="#"><img src="../images/qyfw6.png" alt=""><p>在线法务管家</p></a></li>  
-                    </ol>
-                    <ol class="two">
-                        <li><a href="#"><img src="../images/qyfw7.png" alt=""><p>项目专项法律顾问</p></a></li>
-                        <li><a href="#"><img src="../images/qyfw8.png" alt=""><p>常年法律顾问</p></a></li> 
-                      </ol>
-                  </li>
-                  <li class="yxl">
-                      <ol class="one">
-                          <li><a href="#"><img src="../images/yxl1.png" alt=""><p>合同起草</p></a></li>
-                          <li><a href="#"><img src="../images/yxl2.png" alt=""><p>智能文书生成</p></a></li>
-                          <li><a href="#"><img src="../images/yxl3.png" alt=""><p>合同审查</p></a></li>
-                           
-                        </ol>
-                  </li> 
-                  <li class="flzs">
-                      <ol class="one">
-                          <li><a href="#"><img src="../images/flzs1.png" alt=""><p>合同起草</p></a></li>
-                          <li><a href="#"><img src="../images/flzs2.png" alt=""><p>智能文书生成</p></a></li>
-                          <li><a href="#"><img src="../images/flzs3.png" alt=""><p>合同审查</p></a></li>
-                          <li><a href="#"><img src="../images/flzs4.png" alt=""><p>合同审查</p></a></li>
-                        </ol>
-                  </li> 
-                  <li class="kzzx">
-                      <ol class="one">
-                          <li><a href="#"><img src="../images/kzzx1.png" alt=""><p>合同起草</p></a></li>
-                          <li><a href="#"><img src="../images/kzzx2.png" alt=""><p>智能文书生成</p></a></li>
-                          <li><a href="#"><img src="../images/kzzx3.png" alt=""><p>合同审查</p></a></li>
-                          <li><a href="#"><img src="../images/kzzx4.png" alt=""><p>合同审查</p></a></li>
-                          <li><a href="#"><img src="../images/kzzx5.png" alt=""><p>合同起草</p></a></li>
-                          <li><a href="#"><img src="../images/kzzx6.png" alt=""><p>智能文书生成</p></a></li>
-                          <li><a href="#"><img src="../images/kzzx7.png" alt=""><p>合同审查</p></a></li>
-                          
-                        </ol>
-                  </li> 
-              </ol>
-        </div>
+    <div class="text">
+      <div class="inner">
+        <p><span>首页</span>-<span>企业服务</span>-<span>律师函</span>-<span>充值金币</span>-<span>公司转账</span>-<span>购买服务</span></p>
       </div>
-      <div class="text">
-        <div class="inner">
-          <p><span>首页</span>-<span>一键呼叫律师团</span></p>
-        </div>
-      </div>
-
-</header>
+    </div>
+  </header>
 <div class="content info">
   <h2>订单信息</h2>
   <div class="about">
@@ -107,23 +33,23 @@
       </div>
     </div>
   </div>
-  <h2>发票信息</h2>
+  <!-- <h2>发票信息</h2>
   <div class="about">
     <label for="">
       <input type="checkbox">
       <p>发票开具</p>
     </label>
-  </div>
+  </div> -->
   <h2>支付方式</h2>
   <div class="about no">
-    <label for="">
-      <input type="radio" name="pay" checked="checked">
+    <div class="label ck">
+      <input type="radio" name="pay"  id="item2">
+      <label for="item2"></label>
       <p>金币支付</p>
-      <input type="radio" name="pay">
+      <input type="radio" name="pay" id="item3">
+      <label style="left:200px;"for="item3"></label>
       <p>积分支付</p>
-      <p class="nofind">您的金币不足/您的积分不足</p>
-      <a href="#" class="chong">充值</a>
-    </label>
+    </div>
     <div class="count">
       <p><strong>x1</strong>总计:<span>100金币/1000积分</span></p>
     </div>
@@ -146,5 +72,6 @@
 </footer>
 <script src="../lib/jquery/jquery-2.1.1.min.js"></script>
 <script src="../js/style.js"></script>
+<script>$(function() {$('#header').load('../header.html');})</script>
 </body>
 </html>

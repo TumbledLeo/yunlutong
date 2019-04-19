@@ -85,6 +85,23 @@ gulp.task('html2', function () {
         .pipe(gulp.dest(app.distPath+ 'qyfw/'))
         .pipe(connect.reload())
 });
+gulp.task('html3', function () {
+    var options = {
+        removeComments: true,//清除HTML注释
+        collapseWhitespace: true,//压缩HTML
+        collapseBooleanAttributes: true,//省略布尔属性的值 <input checked="true"/> ==> <input />
+        removeEmptyAttributes: true,//删除所有空格作属性值 <input id="" /> ==> <input />
+        //removeScriptTypeAttributes: true,//删除<script>的type="text/javascript"
+        //removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
+        //minifyJS: true,//压缩页面JS
+        minifyCSS: true//压缩页面CSS
+    };
+    gulp.src(app.srcPath + 'yltmt/*.html')
+        .pipe(gulp.dest(app.buildPath+ 'yltmt/'))
+        .pipe(htmlmin(options))
+        .pipe(gulp.dest(app.distPath+ 'yltmt/'))
+        .pipe(connect.reload())
+});
 /*任务4 把scss编译成css*/
 gulp.task('scss', function () {
     gulp.src(app.srcPath + 'style/*.scss')
@@ -171,7 +188,7 @@ gulp.task('mobile-js', function () {
 /*同时执行多个任务【其他任务的名称】
 * 当bulid执行时，会把数组中的所有任务执行了
 * */
-gulp.task('build', ['lib', 'html','html1','html2', 'scss','scss1', 'js', 'image', 'media', 'mobile', 'mobile-css', 'mobile-js', 'mobile-image']);
+gulp.task('build', ['lib', 'html','html1','html2','html3', 'scss','scss1', 'js', 'image', 'media', 'mobile', 'mobile-css', 'mobile-js', 'mobile-image']);
 
 /*定义server服务
 * 搭建一个服务器，设置运行构建目录
@@ -189,12 +206,14 @@ gulp.task('server', ['build'], function () {
     gulp.watch(app.srcPath + '*.html', ['html']);
     gulp.watch(app.srcPath + 'ty/*.html', ['html1']);
     gulp.watch(app.srcPath + 'qyfw/*.html', ['html2']);
+    gulp.watch(app.srcPath + 'yltmt/*.html', ['html3']);
     gulp.watch(app.srcPath + 'js/**/*.js', ['js']);
 
     gulp.watch(app.srcPath + 'images/**/*', ['image']);
 
     gulp.watch(app.srcPath + 'style/**/*.scss', ['scss']);
     gulp.watch(app.srcPath + 'style/qyfw/*.scss', ['scss1']);
+    // gulp.watch(app.srcPath + 'style/qyfw/*.scss', ['scss2']);
     open('http://localhost:8888');
 });
 gulp.task('default', ['server']);

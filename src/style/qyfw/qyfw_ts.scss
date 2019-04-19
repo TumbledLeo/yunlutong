@@ -1,6 +1,6 @@
 body{
   background:#fff;
-  height:100%;
+  min-height:100%;
 }
 .ts{
   width:970px;
@@ -22,27 +22,30 @@ body{
     margin-top:0;
   }
 }
-.pdf{
-  width:970px;
-  margin:0 auto;
+.wrapp{
+  height:100%;
   position: relative;
-  .pdf_down{
-    position: absolute;
-    top:50px;
-    right:0;
-  }
-  .pdf_bg{
-    position: absolute;
-    top:120px;
-    left:50%;
-    margin-left:-485px;
-    width:870px;
-    height:500px;
-    background:url(../../images/pdf_bg.png)no-repeat center;
-    border: 1px dashed #d0d7dd;
+  padding-bottom: 160px;
+  display:block;
+  .pdf{
+    width:970px;
+    margin:0 auto;
+    position: relative;
+    .pdf_down{
+      position: absolute;
+      top:-70px;
+      right:0;
+    }
+    .pdf_bg{
+      margin-top:120px;
+      width:970px;
+      height:500px;
+      background:url(../../images/pdf_bg.png)no-repeat center;
+      border: 1px dashed #d0d7dd;
+    }
   }
 }
+
 footer{
   position: fixed;
-  bottom:0;
 }

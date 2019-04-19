@@ -3,12 +3,18 @@ h3,h2{
   text-align: center;
 }
 h2{
-  font-weight: bold;
+  line-height: 120px;
+  height:120px;
+}
+h5{
+  font-size: 24px;
+  text-align: center;
   margin-bottom:40px;
 }
 h3{
   margin-top:50px;
   margin-bottom:20px;
+  font-weight: 100;
 }
 body{
   background:#fff;
@@ -25,7 +31,7 @@ h4{
 }
 .about{
   border:1px solid #e1e6eb;
-  label{
+  .label{
     border-bottom:1px solid #e1e6eb;
     height:50px;
     line-height:50px;
@@ -52,19 +58,48 @@ h4{
       text-indent:20px;
     }
     
-    input:after{
-      content:'';
-      width:20px;
-      height:20px;
-      background:url(../../images/int1.png)no-repeat center;
-      position: absolute;
-      z-index:99;
-      right:-20px;
-      bottom:-44px;
-    }
-    input:checked:after{
+    // input:after{
+    //   content:'';
+    //   width:20px;
+    //   height:20px;
+    //   background:url(../../images/int1.png)no-repeat center;
+    //   position: absolute;
+    //   z-index:99;
+    //   right:-20px;
+    //   bottom:-44px;
+    // }
+    // input:checked:after{
+    //   background:url(../../images/int2.png)no-repeat center;
+    // }
+  }
+  .ck{
+    label {
+        position: absolute;
+        left: 40px;
+         top: 14px;
+        width: 20px;
+        height: 20px;
+        background:url(../../images/int1.png)no-repeat center;
+       }
+ 
+   /*设置选中的input的样式*/
+   /* + 是兄弟选择器,获取选中后的label元素*/
+    input:checked+label {
       background:url(../../images/int2.png)no-repeat center;
-    }
+      }
+       
+      // input:checked+label::after {
+      //   position: absolute;
+      //   content: "";
+      //   width: 5px;
+      //    height: 10px;
+      //    top: 3px;
+      //    left: 6px;
+      //    border: 2px solid #fff;
+      //    border-top: none;
+      //    border-left: none;
+      //    transform: rotate(45deg)
+      //  }
   }
   p.inp{
     font-size: 14px;
@@ -106,7 +141,7 @@ h4{
       height:30px;
       border:1px solid #e1e6eb;
       border-radius: 6px;
-      text-indent:40px;
+      padding-left:40px;
       margin-left:26px;
       color:#999999;
     }

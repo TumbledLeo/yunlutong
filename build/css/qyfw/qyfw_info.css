@@ -1,14 +1,21 @@
+@charset "UTF-8";
 h3, h2 {
   font-size: 24px;
   text-align: center; }
 
 h2 {
-  font-weight: bold;
+  line-height: 120px;
+  height: 120px; }
+
+h5 {
+  font-size: 24px;
+  text-align: center;
   margin-bottom: 40px; }
 
 h3 {
   margin-top: 50px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-weight: 100; }
 
 body {
   background: #fff; }
@@ -24,7 +31,7 @@ h4 {
 
 .about {
   border: 1px solid #e1e6eb; }
-  .about label {
+  .about .label {
     border-bottom: 1px solid #e1e6eb;
     height: 50px;
     line-height: 50px;
@@ -32,14 +39,14 @@ h4 {
     overflow: hidden;
     padding-left: 40px;
     position: relative; }
-    .about label p {
+    .about .label p {
       display: inline-block;
       height: 50px;
       line-height: 50px;
       text-indent: 10px;
       margin-right: 66px;
       font-size: 14px; }
-    .about label input {
+    .about .label input {
       width: 20px;
       height: 20px;
       border: none;
@@ -48,16 +55,17 @@ h4 {
       left: -20px;
       bottom: 40px;
       text-indent: 20px; }
-    .about label input:after {
-      content: '';
+  .about .ck {
+    /*设置选中的input的样式*/
+    /* + 是兄弟选择器,获取选中后的label元素*/ }
+    .about .ck label {
+      position: absolute;
+      left: 40px;
+      top: 14px;
       width: 20px;
       height: 20px;
-      background: url(../../images/int1.png) no-repeat center;
-      position: absolute;
-      z-index: 99;
-      right: -20px;
-      bottom: -44px; }
-    .about label input:checked:after {
+      background: url(../../images/int1.png) no-repeat center; }
+    .about .ck input:checked + label {
       background: url(../../images/int2.png) no-repeat center; }
   .about p.inp {
     font-size: 14px;
@@ -98,7 +106,7 @@ h4 {
       height: 30px;
       border: 1px solid #e1e6eb;
       border-radius: 6px;
-      text-indent: 40px;
+      padding-left: 40px;
       margin-left: 26px;
       color: #999999; }
   .about p.inp:last-child {

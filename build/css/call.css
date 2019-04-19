@@ -1,8 +1,8 @@
 .call h1 {
-  height: 140px;
+  height: 120px;
   text-align: center;
   font-size: 24px;
-  line-height: 140px; }
+  line-height: 120px; }
 
 .call ul {
   height: 370px;
@@ -22,7 +22,7 @@
       padding-top: 94px;
       transition: all 0.4s; }
     .call ul li p {
-      font-size: 12px;
+      font-size: 13px;
       text-align: left;
       width: 220px;
       position: absolute;
@@ -81,7 +81,7 @@
       top: 164px;
       width: 44px;
       height: 44px;
-      line-height: 40px;
+      line-height: 44px;
       background: #f85e05;
       border-radius: 60px;
       left: 50%;
@@ -99,9 +99,10 @@
   font-size: 36px;
   color: #f85e05;
   text-align: center;
-  margin-top: 78px;
+  margin-top: 60px;
   margin-bottom: 30px; }
 
 .call .des {
   text-align: center;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-bottom: 200px; }

@@ -1,6 +1,6 @@
 body {
   background: #fff;
-  height: 100%; }
+  min-height: 100%; }
 
 .ts {
   width: 970px; }
@@ -18,24 +18,25 @@ body {
     line-height: 10px;
     margin-top: 0; }
 
-.pdf {
-  width: 970px;
-  margin: 0 auto;
-  position: relative; }
-  .pdf .pdf_down {
-    position: absolute;
-    top: 50px;
-    right: 0; }
-  .pdf .pdf_bg {
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    margin-left: -485px;
-    width: 870px;
-    height: 500px;
-    background: url(../../images/pdf_bg.png) no-repeat center;
-    border: 1px dashed #d0d7dd; }
+.wrapp {
+  height: 100%;
+  position: relative;
+  padding-bottom: 160px;
+  display: block; }
+  .wrapp .pdf {
+    width: 970px;
+    margin: 0 auto;
+    position: relative; }
+    .wrapp .pdf .pdf_down {
+      position: absolute;
+      top: -70px;
+      right: 0; }
+    .wrapp .pdf .pdf_bg {
+      margin-top: 120px;
+      width: 970px;
+      height: 500px;
+      background: url(../../images/pdf_bg.png) no-repeat center;
+      border: 1px dashed #d0d7dd; }
 
 footer {
-  position: fixed;
-  bottom: 0; }
+  position: fixed; }
