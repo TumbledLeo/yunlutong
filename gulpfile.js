@@ -119,6 +119,14 @@ gulp.task('scss1', function () {
         .pipe(gulp.dest(app.distPath + 'css/qyfw/'))
         .pipe(connect.reload())
 });
+gulp.task('scss2', function () {
+    gulp.src(app.srcPath + 'style/yltmt/*.scss')
+        .pipe(scss())
+        .pipe(gulp.dest(app.buildPath + 'css/yltmt/'))
+       .pipe(cssmin())//压缩
+        .pipe(gulp.dest(app.distPath + 'css/yltmt/'))
+        .pipe(connect.reload())
+});
 /*任务5 移动js*/
 gulp.task('js', function () {
     gulp.src(app.srcPath + 'js/**/*.js')
@@ -188,7 +196,7 @@ gulp.task('mobile-js', function () {
 /*同时执行多个任务【其他任务的名称】
 * 当bulid执行时，会把数组中的所有任务执行了
 * */
-gulp.task('build', ['lib', 'html','html1','html2','html3', 'scss','scss1', 'js', 'image', 'media', 'mobile', 'mobile-css', 'mobile-js', 'mobile-image']);
+gulp.task('build', ['lib', 'html','html1','html2','html3', 'scss','scss1','scss2', 'js', 'image', 'media', 'mobile', 'mobile-css', 'mobile-js', 'mobile-image']);
 
 /*定义server服务
 * 搭建一个服务器，设置运行构建目录
@@ -213,7 +221,7 @@ gulp.task('server', ['build'], function () {
 
     gulp.watch(app.srcPath + 'style/**/*.scss', ['scss']);
     gulp.watch(app.srcPath + 'style/qyfw/*.scss', ['scss1']);
-    // gulp.watch(app.srcPath + 'style/qyfw/*.scss', ['scss2']);
+  gulp.watch(app.srcPath + 'style/yltmt/*.scss', ['scss2']);
     open('http://localhost:8888');
 });
 gulp.task('default', ['server']);

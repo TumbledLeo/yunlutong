@@ -1,0 +1,89 @@
+.mt {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  .mt .content {
+    width: 740px; }
+    .mt .content h1 {
+      font-size: 30px;
+      margin-top: 50px;
+      color: #333333; }
+    .mt .content p.data {
+      font-size: 12px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      color: #b5b5b5; }
+    .mt .content .page {
+      padding-bottom: 80px;
+      bottom: 1px solid #e1e6eb; }
+      .mt .content .page p {
+        text-align: justify;
+        text-indent: 2em;
+        font-size: 16px;
+        line-height: 40px;
+        color: #555555; }
+      .mt .content .page h2 {
+        color: #555555;
+        font-size: 18px;
+        text-indent: 2em; }
+    .mt .content .part ol li {
+      float: left;
+      margin-right: 28px;
+      padding-left: 20px;
+      cursor: pointer; }
+    .mt .content .part ol li:nth-of-type(1) {
+      background: url(../../images/share.png) no-repeat left; }
+    .mt .content .part ol li:nth-of-type(2) {
+      background: url(../../images/star.png) no-repeat left; }
+    .mt .content .part ol li:nth-of-type(3) {
+      background: url(../../images/say.png) no-repeat left; }
+    .mt .content .part ol li:nth-of-type(4) {
+      background: url(../../images/zan.png) no-repeat left; }
+    .mt .content .part ol li:nth-of-type(1):hover {
+      background: url(../../images/share1.png) no-repeat left; }
+      .mt .content .part ol li:nth-of-type(1):hover p {
+        color: #f85e05; }
+    .mt .content .part ol li:nth-of-type(2):hover {
+      background: url(../../images/star1.png) no-repeat left; }
+      .mt .content .part ol li:nth-of-type(2):hover p {
+        color: #f85e05; }
+    .mt .content .part ol li:nth-of-type(3):hover {
+      background: url(../../images/say1.png) no-repeat left; }
+      .mt .content .part ol li:nth-of-type(3):hover p {
+        color: #f85e05; }
+    .mt .content .part ol li:nth-of-type(4):hover {
+      background: url(../../images/zan1.png) no-repeat left; }
+      .mt .content .part ol li:nth-of-type(4):hover p {
+        color: #f85e05; }
+  .mt .about {
+    width: 400px; }
+    .mt .about li {
+      width: 380px;
+      height: 64px;
+      padding: 20px 8px;
+      background: #fafbfc;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px; }
+      .mt .about li .des {
+        width: 266px;
+        overflow: hidden; }
+    .mt .about h2 {
+      font-size: 18px;
+      margin-top: 50px;
+      color: #333333; }
+    .mt .about h3 {
+      color: #555555;
+      font-size: 18px;
+      margin-bottom: 8px;
+      line-height: 18px; }
+    .mt .about p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-align: justify;
+      color: #999999;
+      font-size: 12px; }
