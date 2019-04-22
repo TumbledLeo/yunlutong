@@ -35,11 +35,11 @@
     <div class="wraping wrap">
         <ul class="href cf inner">
             <li style="margin-left:300px;"><a href="">首页</a></li>
-            <li ><a href="">企业服务</a></li>
-            <li ><a href="">云小律</a></li>
-            <li><a href="">云律通媒体</a></li>
-            <li ><a href="">法律助手</a></li>
-            <li ><a href="">控制中心</a></li>
+            <li><a href="">企业服务</a></li>
+            <li><a href="">云小律</a></li>
+            <li><a href="yltmt/yltmt_list.html">云律通媒体</a></li>
+            <li><a href="">法律助手</a></li>
+            <li><a href="">控制中心</a></li>
         </ul>
          <ol class="s_nav">
             <li class="qyfw">
@@ -345,6 +345,10 @@
         </div>
         
 </footer>
+<div class="law_tools">
+<!-- <p>咨询·法律工具</p> -->
+<a href="#" class="show"></a>
+</div>
 <script src="lib/jquery/jquery-2.1.1.min.js"></script>
 <script src="js/style.js"></script>
 <script src="lib/swiper.min.js"></script>
@@ -368,7 +372,14 @@
         pagination: {
         el: '.swiper-pagination',
         clickable :true,
+
   },
+  autoplay:true,//等同于以下设置
+  /*autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+    },*/
     observer:true,//修改swiper自己或子元素时，自动初始化swiper
     observeParents:true,//修改swiper的父元素时，自动初始化swiper
     }) ;    

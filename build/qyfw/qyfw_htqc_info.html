@@ -22,23 +22,93 @@
       <h3>合同起草</h3>
       <h5>买卖租赁信息采集</h5>
       <form action="">
-        <h4>主体信息</h4>
-        <div class="about">
-            <div class="label ck">
-                <input type="radio" name="way"  id="item">
+        <h4>委托方</h4>
+        <div class="about htqc_wtf" style="position:relative">
+            <div class="label ck tabs">
+                <input type="radio" name="way"  id="item" class="tab" checked="true">
                 <label for="item"></label>
                 <p>企业或其他组织</p>
-                <input type="radio" name="way" id="item1">
+                <input type="radio" name="way" id="item1" class="tab">
                 <label for="item1" style="left:244px;"></label>
                 <p>自然人</p>
             </div>
-              <p class="inp"><span>名称</span>:<input type="text"></p>
-              <p class="inp"><span>法人</span>:<input type="text"></p>
-              <p class="inp"><span>地址</span>:<input type="text"></p>
-              <p class="inp"><span>电话</span>:<input type="text"></p>
+            <div class="tabContents">
+              <div class="tabContent">
+                  <p class="inp"><span class="star">名称</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">法人</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">地址</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">电话</span>:<input type="text"></p>
+              </div>
+              <div class="tabContent">
+                  <p class="inp"><span class="star">姓名</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">出生年月</span>:
+                  
+                    <select name="year1" style="padding-left:28px;text-align: center;"></select>
+                    <select name="month1" style="padding-left:28px;text-align: center;"><option value="0"></option></select>
+                    <select name="day1" style="padding-left:28px;text-align: center;"><option value="0"></option></select>
+                  
+                  </p>
+                  <p class="inp"><span class="star">性别</span>:
+                    <div class="label ck" style="position:absolute;top: 210px;left: 96px;border:none;">
+                      <input type="radio" name="way3"  id="item8">
+                      <label for="item8"></label>
+                      <p>男</p>
+                      <input type="radio" name="way3" id="item9">
+                      <label for="item9" style="left:160px;"></label>
+                      <p>女</p>
+                  </div></p>
+                  <p class="inp"><span class="star">地址</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">电话</span>:<input type="text"></p>
+              </div>
+            </div>
+             
 
         </div>
-        <h4>争议解决方式</h4>
+        <h4>相对方</h4>
+        <div class="about htqc_xdf" style="position:relative">
+            <div class="label ck tabs">
+                <input type="radio" name="way7"  id="item11" class="tab" checked="true">
+                <label for="item11"></label>
+                <p>企业或其他组织</p>
+                <input type="radio" name="way7" id="item12" class="tab">
+                <label for="item12" style="left:244px;"></label>
+                <p>自然人</p>
+            </div>
+            <div class="tabContents">
+              <div class="tabContent">
+                  <p class="inp"><span class="star">名称</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">法人</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">地址</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">电话</span>:<input type="text"></p>
+              </div>
+              <div class="tabContent">
+                  <p class="inp"><span class="star">姓名</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">出生年月</span>:
+                  
+                    <select name="year2" style="padding-left:28px;text-align: center;"></select>
+                    <select name="month2" style="padding-left:28px;text-align: center;"><option value="0"></option></select>
+                    <select name="day2" style="padding-left:28px;text-align: center;"><option value="0"></option></select>
+                  
+                  </p>
+                  <p class="inp"><span class="star">性别</span>:
+                    <div class="label ck" style="position:absolute;top: 210px;left: 96px;border:none;">
+                      <input type="radio" name="way8"  id="item13">
+                      <label for="item13"></label>
+                      <p>男</p>
+                      <input type="radio" name="way8" id="item14">
+                      <label for="item14" style="left:160px;"></label>
+                      <p>女</p>
+                  </div></p>
+                  <p class="inp"><span class="star">地址</span>:<input type="text"></p>
+                  <p class="inp"><span class="star">电话</span>:<input type="text"></p>
+              </div>
+            </div>
+             
+
+        </div>
+
+
+        <h4 class="star">争议解决方式</h4>
         <div class="about">
             <div class="label ck">
                 <input type="radio" name="way1"  id="item3">
@@ -48,8 +118,7 @@
                 <label for="item4" style="left:174px;"></label>
                 <p>仲裁</p>
             </div>
-            
-              <p class="inp int"><span>管辖机构名称</span>:<input type="text"></p>
+            <p class="inp int"><span class="star">管辖机构名称</span>:<input type="text"></p>
         </div>
         <h4>需求说明</h4>
         <div class="about" style="border:none">
@@ -73,7 +142,19 @@
       </div>
     </footer>
     <script src="../lib/jquery/jquery-2.1.1.min.js"></script>
+    <script src="../lib/YMDClass.js"></script>
+
     <script src="../js/style.js"></script>
     <script>$(function() {$('#header').load('../header.html');})</script>
+    <script>
+        //new YMDselect('year1','month1');
+        //new YMDselect('year1','month1',1990);
+        //new YMDselect('year1','month1',1990,2);
+        //new YMDselect('year1','month1','day1');
+        new YMDselect('year1','month1','day1');
+        new YMDselect('year2','month2','day2');
+        //new YMDselect('year1','month1','day1',1990,2);
+        //new YMDselect('year1','month1','day1',1990,2,10);
+      </script>
   </body>
 </html>

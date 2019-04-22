@@ -5,7 +5,7 @@ $(function () {
       $(ele + ' .tabs .tab').eq(0).addClass('active');
       $(ele + ' .tabs .tab').click(function (e) {
           e.stopPropagation();
-          e.preventDefault();
+        //  e.preventDefault();
           if ($(this).hasClass('active')) {
               return;
           }
@@ -22,6 +22,12 @@ $(function () {
   }
   tabCtrl('.denglu');
   tabCtrl('.dengluma');
+  tabCtrl('.wtf');
+  tabCtrl('.stf');
+  tabCtrl('.sszc');
+  tabCtrl('.htqc_wtf');
+  tabCtrl('.htqc_xdf');
+  tabCtrl('.xmzx');
   //角度变化
   function jude(){
     var num = $('.text').html();

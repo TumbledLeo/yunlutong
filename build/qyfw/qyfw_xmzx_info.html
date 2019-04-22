@@ -22,31 +22,53 @@
       <h2>项目专项法律顾问采集</h2>
       <form action="">
         <h4>委托人</h4>
-        <div class="about" style="position:relative">
-            <div class="label ck">
-                <input type="radio" name="way"  id="item">
+        <div class="about xmzx" style="position:relative">
+            <div class="label ck tabs">
+                <input type="radio" name="way"  id="item" class="tab" checked="true">
                 <label for="item"></label>
                 <p>企业或其他组织</p>
-                <input type="radio" name="way" id="item1">
+                <input type="radio" name="way" id="item1" class="tab">
                 <label for="item1" style="left:244px;"></label>
                 <p>自然人</p>
             </div>
-              <p class="inp "><span class="star">姓名</span>:<input type="text"></p>
-              <p class="inp "><span class="star">性别</span>:
-                <div class="label ck" style="position:absolute;top: 140px;left: 132px;border:none;">
-                  <input type="radio" name="way1"  id="item4">
-                  <label for="item4"></label>
-                  <p>男</p>
-                  <input type="radio" name="way1" id="item5">
-                  <label for="item5" style="left:160px;"></label>
-                  <p>女</p>
+            <div class="tabContents">
+              <div class="tabContent">
+                  <p class="inp "><span class="star">名称</span>:<input type="text"></p>
+                  
+                  <p class="inp "><span class="star">社会统一信用码：</span>:<input type="text" ></p>
+                  <p class="inp "><span class="star" style="">法定代表人/负责人</span>:<input type="text"></p>
+                  <p class="inp "><span class="star">注册地址</span>:<input type="text"></p>
+                  <p class="inp "><span class="">联系地址</span>:<input type="text"></p>
+                  <p class="inp "><span class="star">电话</span>:<input type="text"></p>
               </div>
-              <p class="inp "><span class="star">身份证号</span>:<input type="text" placeholder="数字输入，最后一位如不是数字则只能是字母“X”"></p>
-              <p class="inp "><span class="star" style="">所在单位及岗位</span>:<input type="text"></p>
-              <p class="inp "><span class="star">户籍地址</span>:<input type="text"></p>
-              <p class="inp "><span class="star">联系地址</span>:<input type="text"></p>
-              <p class="inp "><span class="star">电话</span>:<input type="text"></p>
+              <div class="tabContent">
+                  <p class="inp "><span class="star">姓名</span>:<input type="text"></p>
+                  <p class="inp "><span class="star">性别</span>:
+                    <div class="label ck" style="position:absolute;top: 140px;left: 150px;border:none;">
+                      <input type="radio" name="way1"  id="item4">
+                      <label for="item4"></label>
+                      <p>男</p>
+                      <input type="radio" name="way1" id="item5">
+                      <label for="item5" style="left:160px;"></label>
+                      <p>女</p>
+                  </div>
+                  <p class="inp "><span class="star">身份证号</span>:<input type="text" placeholder="数字输入，最后一位如不是数字则只能是字母“X”"></p>
+                  <p class="inp "><span class="star" style="">所在单位及岗位</span>:<input type="text"></p>
+                  <p class="inp "><span class="star">户籍地址</span>:<input type="text"></p>
+                  <p class="inp "><span class="">联系地址</span>:<input type="text"></p>
+                  <p class="inp "><span class="star">电话</span>:<input type="text"></p>
+              </div>
+            </div>
+              
         </div>
+        <h4 class="star">业务类型</h4>
+        <div class="about" style="border:none">
+          <textarea name="" id="" cols="30" rows="10" ></textarea>
+          </div>
+        <h4>概述</h4>
+        <div class="about" style="border:none">
+            <textarea name="" id="" cols="30" rows="10" ></textarea>
+            </div>
         <input type="submit" class="sub">
       </form>
   </div>
@@ -66,7 +88,7 @@
     </footer>
 <style>
 .about p.inp span{
-width:99px;
+width:118px;
 }
 </style>
     <script src="../lib/jquery/jquery-2.1.1.min.js"></script>

@@ -28,6 +28,16 @@ h4{
   background:#fafafa;
   line-height:40px;
   text-indent:40px;
+  position: relative;
+}
+h4.star:after{
+  content:'*';
+  position: absolute;
+  width:4px;
+  height:4px;
+  color:#ff0f0f;
+  left:-10px;
+  top:-4px;
 }
 .about{
   border:1px solid #e1e6eb;
@@ -156,7 +166,7 @@ h4{
   }
   p.inp.in{
     span{
-      width:100px;
+      width:118px;
     }
   }
   .about p.inp.int:last-child {

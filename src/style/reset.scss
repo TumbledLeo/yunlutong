@@ -198,7 +198,7 @@ label{
   right:250px;
   img{
     border-radius: 30px;
-    margin-top:5px;
+    margin-top:-4px;
   }
 }
 .nav{
@@ -271,5 +271,36 @@ footer {
     text-align: center;
     position: absolute;
     bottom:28px;
+  }
+}
+// .law_tools{
+//   position: fixed;
+//   bottom:40%;
+//   right:0;
+//   width:44px;
+//   height:126px;
+//   padding-top:44px;
+//   background:#003d84 url(../images/logo_tools.png)no-repeat top;
+//   background-position: 50% 14px ;
+//   p{
+//     font-size: 14px;
+//     color:#fff;
+//     writing-mode:tb-rl;
+//     width:16px;
+//     text-align: center;
+//     margin:0 auto;
+//     line-height:20px;
+//   }
+// }
+.law_tools{
+  position: fixed;
+   bottom:40%;
+  right:0;
+  
+  .show{
+    width:44px;
+    height:170px;
+    display: block;
+    background:url(../images/law_tools.jpg)no-repeat center;
   }
 }

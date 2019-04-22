@@ -170,7 +170,7 @@ a {
     right: 250px; }
     .header .top .user img {
       border-radius: 30px;
-      margin-top: 5px; }
+      margin-top: -4px; }
   .header .top .nav {
     position: absolute;
     right: 0;
@@ -227,3 +227,13 @@ footer {
     text-align: center;
     position: absolute;
     bottom: 28px; }
+
+.law_tools {
+  position: fixed;
+  bottom: 40%;
+  right: 0; }
+  .law_tools .show {
+    width: 44px;
+    height: 170px;
+    display: block;
+    background: url(../images/law_tools.jpg) no-repeat center; }

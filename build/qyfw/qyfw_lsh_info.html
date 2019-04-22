@@ -22,33 +22,26 @@
       <h3>律师函</h3>
       <h5>债权催告信息采集</h5>
       <form action="">
-        <h4>委托人</h4>
-        <div class="about">
-            <div class="label ck">
-                <input type="radio" name="way"  id="item">
-                <label for="item"></label>
+        <h4>委托方</h4>
+        <div class="about wtf" style="position:relative">
+            <div class="label ck tabs">
+                <input type="radio" name="way"  id="item" class="tab" checked="true">
+                <label for="item" ></label>
                 <p>企业或其他组织</p>
-                <input type="radio" name="way" id="item1">
-                <label for="item1" style="left:244px;"></label>
+                <input type="radio" name="way" id="item1" class="tab">
+                <label for="item1" style="left:244px;" ></label>
                 <p>自然人</p>
             </div>
-              <p class="inp in"><span class="star">名称</span>:<input type="text"></p>
-              <p class="inp in"><span class="star">社会统一信用码</span>:<input type="text"></p>
-              <p class="inp in"><span class="star">法人/负责人</span>:<input type="text"></p>
-              <p class="inp in"><span class="star">联系地址</span>:<input type="text"></p>
-              <p class="inp in"><span class="star">电话</span>:<input type="text"></p>
-        </div>
-        <h4>委托人</h4>
-        <div class="about" style="position:relative">
-            <div class="label ck">
-                <input type="radio" name="way2"  id="item2">
-                <label for="item2"></label>
-                <p>企业或其他组织</p>
-                <input type="radio" name="way2" id="item3">
-                <label for="item3" style="left:244px;"></label>
-                <p>自然人</p>
-            </div>
-              <p class="inp "><span class="star">姓名</span>:<input type="text"></p>
+            <div class="tabContents">
+              <div class="tabContent">
+                  <p class="inp in"><span class="star">名称</span>:<input type="text"></p>
+                  <p class="inp in"><span class="star">社会统一信用码</span>:<input type="text"></p>
+                  <p class="inp in"><span class="star">法定代表人/负责人</span>:<input type="text"></p>
+                  <p class="inp in"><span class="star">联系地址</span>:<input type="text"></p>
+                  <p class="inp in"><span class="star">电话</span>:<input type="text"></p>
+              </div>
+              <div class="tabContent">
+                  <p class="inp "><span class="star">姓名</span>:<input type="text"></p>
               <p class="inp "><span class="star">性别</span>:
                 <div class="label ck" style="position:absolute;top: 140px;left: 96px;border:none;">
                 <input type="radio" name="way1"  id="item4">
@@ -61,6 +54,45 @@
               <p class="inp "><span class="star">身份证号</span>:<input type="text" placeholder="数字输入，最后一位如不是数字则只能是字母“X”"></p>
               <p class="inp "><span class="star">联系地址</span>:<input type="text"></p>
               <p class="inp "><span class="star">电话</span>:<input type="text"></p>
+              </div>
+            </div>
+              
+        </div>
+        <h4>相对方</h4>
+        <div class="about stf" style="position:relative">
+            <div class="label ck tabs">
+                <input type="radio" name="way2"  id="item6" class="tab" checked="true">
+                <label for="item6" ></label>
+                <p>企业或其他组织</p>
+                <input type="radio" name="way2" id="item7" class="tab">
+                <label for="item7" style="left:244px;" ></label>
+                <p>自然人</p>
+            </div>
+            <div class="tabContents">
+              <div class="tabContent">
+                  <p class="inp in"><span class="star">名称</span>:<input type="text"></p>
+                  <p class="inp in"><span class="">社会统一信用码</span>:<input type="text"></p>
+                  <p class="inp in"><span class="">法人/负责人</span>:<input type="text"></p>
+                  <p class="inp in"><span class="star">联系地址</span>:<input type="text"></p>
+                  <p class="inp in"><span class="star">电话</span>:<input type="text"></p>
+              </div>
+              <div class="tabContent">
+                  <p class="inp "><span class="star">姓名</span>:<input type="text"></p>
+              <p class="inp "><span class="star">性别</span>:
+                <div class="label ck" style="position:absolute;top: 140px;left: 96px;border:none;">
+                  <input type="radio" name="way3"  id="item8">
+                  <label for="item8"></label>
+                  <p>男</p>
+                  <input type="radio" name="way3" id="item9">
+                  <label for="item9" style="left:160px;"></label>
+                  <p>女</p>
+                </div>
+              </p>
+              <p class="inp "><span class="">身份证号</span>:<input type="text" placeholder="数字输入，最后一位如不是数字则只能是字母“X”"></p>
+              <p class="inp "><span class="star">联系地址</span>:<input type="text"></p>
+              <p class="inp "><span class="star">电话</span>:<input type="text"></p>
+              </div>
+            </div>
         </div>
         <input type="submit" class="sub">
       </form>
