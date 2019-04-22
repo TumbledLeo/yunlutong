@@ -30,7 +30,7 @@
       background:url(../images/wx.png)no-repeat ;
       background-position:34% 50%; 
     }
-    .wx:hover{
+    .wx:hover,.wx.active{
       border:1px solid #2e79bd;
       background:#f0f7fd url(../images/wx.png)no-repeat;
       color:#2e79bd;
@@ -44,13 +44,13 @@
       background:url(../images/yhk.png)no-repeat ;
       background-position:34% 50%;
     }
-    .zfb:hover{
+    .zfb:hover,.zfb.active{
       border:1px solid #2e79bd;
       background:#f0f7fd url(../images/zfb.png)no-repeat;
       color:#2e79bd;
       background-position:34% 50%; 
     }
-    .yhk:hover{
+    .yhk:hover,.yhk.active{
       border:1px solid #2e79bd;
       background:#f0f7fd url(../images/yhk.png)no-repeat;
       color:#2e79bd;
@@ -65,7 +65,7 @@
     li:nth-of-type(1){
       margin-bottom:20px;
     }
-    li:hover{
+    li:hover,li.active{
       border:1px solid #2e79bd;
       background:#f0f7fd;
       color:#2e79bd;

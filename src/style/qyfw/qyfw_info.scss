@@ -193,3 +193,56 @@ input.sub{
   font-size: 20px;
   display:block;
   }
+  .for{
+    border-top:1px solid #e1e6eb;
+    
+    li{
+      display: flex;
+      justify-content: space-between;
+      a{
+        color:#f85e05;
+        width:54px;
+        border-left:1px solid #e1e6eb;
+        text-align: center;
+        line-height: 100px
+      }
+    }
+    p{
+      display:inline-block;
+     padding-left:40px;
+     font-size: 14px;
+     line-height:50px;
+     display: flex;
+     justify-content: space-between;
+     width:876px;
+     flex-wrap:wrap;
+     span{
+       margin-right:20px;
+     }
+    }
+  }
+  .add{
+    position: absolute;
+    right:14px;
+    top:0px;
+    color:#f85e05;
+    font-size: 14px;
+    background:url(../../images/add.png)no-repeat;
+    background-position:17% 55%;
+  
+  }
+  .subshow{
+    width:80px;
+    height:30px;
+    background:#003d84;
+    text-align: center;
+    font-size: 12px;
+    color:#fff;
+    display:block;
+    line-height: 30px;
+    border-radius: 6px;
+    position: absolute;
+    bottom:65px;
+    right:170px;
+    border:none;
+  }

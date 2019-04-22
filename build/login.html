@@ -99,11 +99,12 @@
     </footer>
     <script src="lib/jquery/jquery-2.1.1.min.js"></script>
 <script src="js/style.js"></script>
+<script src="lib/layer-v3.1.1/layer/layer.js"></script>
 <script>
 function checkPhone(){ 
   var phone = document.getElementById('tel1').value;
   if(!(/^1[34578]\d{9}$/.test(phone))){ 
-      alert("手机号码有误，请重填");  
+    layer.msg('手机号码有误，请重填'); 
       return false; 
   }else{
     $('#tel1').parent().find('.get').removeClass('btn_disabled');
@@ -113,7 +114,7 @@ function checkPhone(){
 function checkPhone1(){
   var phone1 = document.getElementById('tel2').value;
   if(!(/^1[34578]\d{9}$/.test(phone1))){ 
-      alert("手机号码有误，请重填");  
+    layer.msg('手机号码有误，请重填');  
       return false; 
   }else{
     $('#tel2').parent().find('.get').removeClass('btn_disabled');

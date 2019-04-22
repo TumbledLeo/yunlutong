@@ -295,7 +295,8 @@ header {
       display: flex;
       justify-content: space-between; }
       .main .media .news li {
-        width: 292px; }
+        width: 292px;
+        margin: 0; }
       .main .media .news a {
         display: block; }
       .main .media .news .img_new {

@@ -173,7 +173,30 @@ $('.mt .content .part ol > li.three').click(function(){
     $(this).removeClass('active');
   }else{
     $(this).addClass('active');
+  } 
+});
+//支付
+$('#way li').click(function(){
+  if($(this).hasClass('active')){
+    return
+  }else{
+    $(this).addClass('active').siblings().removeClass('active');
   }
-  
+});
+$('.price li').click(function(){
+  if($(this).hasClass('active')){
+    return
+  }else{
+    $(this).addClass('active').siblings().removeClass('active');
+  }
+});
+//添加相对方
+$('.add').click(function(){
+  if($('.stf').css('display')=='block'){
+    layer.msg('请先填写下方内容'); 
+  }
+});
+$('.subshow').click(function(){
+ 
 });
 });
