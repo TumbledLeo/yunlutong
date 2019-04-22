@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mt {
   width: 1200px;
   margin: 0 auto;
@@ -15,6 +16,7 @@
       margin-bottom: 50px;
       color: #b5b5b5; }
     .mt .content .page {
+      border-bottom: 1px solid #e1e6eb;
       padding-bottom: 80px;
       bottom: 1px solid #e1e6eb; }
       .mt .content .page p {
@@ -27,35 +29,111 @@
         color: #555555;
         font-size: 18px;
         text-indent: 2em; }
-    .mt .content .part ol li {
+    .mt .content .part {
+      padding-top: 24px; }
+      .mt .content .part ol {
+        margin-bottom: 30px; }
+        .mt .content .part ol li:first-child {
+          position: relative; }
+      .mt .content .part .share_a {
+        width: 144px;
+        height: 48px;
+        padding-top: 8px;
+        background: url(../../images/share_bg.png) no-repeat top center;
+        position: absolute;
+        bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
+        animate: all 1s; }
+        .mt .content .part .share_a li {
+          width: 22px;
+          height: 22px; }
+          .mt .content .part .share_a li a {
+            display: inline-block;
+            width: 22px;
+            height: 22px; }
+        .mt .content .part .share_a li:nth-of-type(1) a {
+          background: url(../../images/share_wb.png) no-repeat; }
+        .mt .content .part .share_a li:nth-of-type(1) a:hover {
+          background: url(../../images/share_wba.png) no-repeat; }
+        .mt .content .part .share_a li:nth-of-type(2) a {
+          background: url(../../images/share_wx.png) no-repeat; }
+        .mt .content .part .share_a li:nth-of-type(2) a:hover {
+          background: url(../../images/share_wxb.png) no-repeat; }
+        .mt .content .part .share_a li:nth-of-type(3) a {
+          background: url(../../images/share_qq.png) no-repeat; }
+        .mt .content .part .share_a li:nth-of-type(3) a:hover {
+          background: url(../../images/share_qqa.png) no-repeat; }
+    .mt .content .part ol > li {
       float: left;
       margin-right: 28px;
       padding-left: 20px;
       cursor: pointer; }
-    .mt .content .part ol li:nth-of-type(1) {
+    .mt .content .part ol > li:nth-of-type(1) {
       background: url(../../images/share.png) no-repeat left; }
-    .mt .content .part ol li:nth-of-type(2) {
+    .mt .content .part ol > li:nth-of-type(2) {
       background: url(../../images/star.png) no-repeat left; }
-    .mt .content .part ol li:nth-of-type(3) {
+    .mt .content .part ol > li:nth-of-type(2).active {
+      background: url(../../images/started.png) no-repeat left; }
+    .mt .content .part ol > li:nth-of-type(3) {
       background: url(../../images/say.png) no-repeat left; }
-    .mt .content .part ol li:nth-of-type(4) {
+    .mt .content .part ol > li:nth-of-type(4) {
       background: url(../../images/zan.png) no-repeat left; }
-    .mt .content .part ol li:nth-of-type(1):hover {
+    .mt .content .part ol > li:nth-of-type(4).active {
+      background: url(../../images/zaned.png) no-repeat left; }
+    .mt .content .part ol > li:nth-of-type(1):hover {
       background: url(../../images/share1.png) no-repeat left; }
-      .mt .content .part ol li:nth-of-type(1):hover p {
+      .mt .content .part ol > li:nth-of-type(1):hover p {
         color: #f85e05; }
-    .mt .content .part ol li:nth-of-type(2):hover {
+      .mt .content .part ol > li:nth-of-type(1):hover .share_a {
+        opacity: 1; }
+    .mt .content .part ol > li:nth-of-type(2):hover {
       background: url(../../images/star1.png) no-repeat left; }
-      .mt .content .part ol li:nth-of-type(2):hover p {
+      .mt .content .part ol > li:nth-of-type(2):hover p {
         color: #f85e05; }
-    .mt .content .part ol li:nth-of-type(3):hover {
+    .mt .content .part ol > li:nth-of-type(3):hover {
       background: url(../../images/say1.png) no-repeat left; }
-      .mt .content .part ol li:nth-of-type(3):hover p {
+      .mt .content .part ol > li:nth-of-type(3):hover p {
         color: #f85e05; }
-    .mt .content .part ol li:nth-of-type(4):hover {
+    .mt .content .part ol > li:nth-of-type(4):hover {
       background: url(../../images/zan1.png) no-repeat left; }
-      .mt .content .part ol li:nth-of-type(4):hover p {
+      .mt .content .part ol > li:nth-of-type(4):hover p {
         color: #f85e05; }
+    .mt .content .speech ol li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px; }
+      .mt .content .speech ol li img {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px; }
+      .mt .content .speech ol li .word {
+        width: 568px;
+        padding: 14px 40px;
+        background: #fafafa;
+        margin: 0;
+        position: relative; }
+        .mt .content .speech ol li .word p.tit {
+          font-size: 12px;
+          color: #adadad;
+          margin-bottom: 14px; }
+          .mt .content .speech ol li .word p.tit span {
+            font-size: 14px;
+            color: #333333;
+            margin-right: 12px; }
+        .mt .content .speech ol li .word p {
+          font-size: 16px;
+          color: #555;
+          line-height: 24px; }
+      .mt .content .speech ol li .word:after {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 30px;
+        border: 10px solid;
+        border-color: transparent #fafafa transparent transparent;
+        /*透明 透明  黄*/ }
   .mt .about {
     width: 400px; }
     .mt .about li {
@@ -63,12 +141,13 @@
       height: 64px;
       padding: 20px 8px;
       background: #fafbfc;
-      display: flex;
-      justify-content: space-between;
       margin-top: 20px; }
       .mt .about li .des {
         width: 266px;
         overflow: hidden; }
+      .mt .about li a {
+        display: flex;
+        justify-content: space-between; }
     .mt .about h2 {
       font-size: 18px;
       margin-top: 50px;

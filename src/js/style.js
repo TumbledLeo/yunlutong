@@ -161,5 +161,13 @@ $('.sma').click(function(){
 //   } 
 // }
 // checkPhone('#tel1');
-
+//点赞收藏
+$('.mt .content .part ol > li.three').click(function(){
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+  }else{
+    $(this).addClass('active');
+  }
+  
+});
 });

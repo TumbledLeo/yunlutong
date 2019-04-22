@@ -78,6 +78,7 @@ a {
       color: #f85e05; }
 
 .s_nav {
+  display: none;
   width: 100%;
   padding: 40px 0 0;
   background: rgba(0, 61, 132, 0.9);
