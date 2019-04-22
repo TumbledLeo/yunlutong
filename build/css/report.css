@@ -510,23 +510,20 @@ li {
   right: 12px; }
 
 .wraping .p1 {
-  background: linear-gradient(to right, #2ad0e9, #2ae2b5);
+  color: #2ae2b5;
   -webkit-background-clip: text;
-  color: transparent;
   font-size: 48px;
   font-weight: bold; }
 
 .wraping .p2 {
-  background: linear-gradient(to right, #ffb651, #ffda57);
   -webkit-background-clip: text;
-  color: transparent;
+  color: #ffb651;
   font-size: 48px;
   font-weight: bold; }
 
 .wraping .p3 {
-  background: linear-gradient(to right, #f85769, #ffa970);
   -webkit-background-clip: text;
-  color: transparent;
+  color: #f85769;
   font-size: 48px;
   font-weight: bold; }
 
