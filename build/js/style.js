@@ -190,7 +190,25 @@ $(function () {
   $('.add').click(function () {
     if ($('.stf').css('display') == 'block') {
       layer.msg('请先填写下方内容');
+    } else {
+      $('.stf').css('display', 'block');
+    }
+    if ($('.htqc_xdf').css('display') == 'block') {
+      layer.msg('请先填写下方内容');
+    } else {
+      $('.htqc_xdf').css('display', 'block');
+    }
+
+    if ($('.delete').parent().parent().find('li').length == 0) {
+      $('.delete').parent().css('display', 'block');
+      $('.for').css('display', 'none');
     }
   });
-  $('.subshow').click(function () {});
+  $('.subshow').click(function () {
+    $('.for').css('display', 'block');
+    $(this).parent().css('display', 'none');
+  });
+  $('.delete').click(function () {
+    $(this).parent().remove();
+  });
 });

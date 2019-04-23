@@ -147,10 +147,14 @@ input.sub {
   display: block; }
 
 .for {
-  border-top: 1px solid #e1e6eb; }
+  border-top: 1px solid #e1e6eb;
+  border-right: 1px solid #e1e6eb;
+  border-left: 1px solid #e1e6eb;
+  display: none; }
   .for li {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e6eb; }
     .for li a {
       color: #f85e05;
       width: 54px;
@@ -163,11 +167,11 @@ input.sub {
     font-size: 14px;
     line-height: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 876px;
     flex-wrap: wrap; }
     .for p span {
-      margin-right: 20px; }
+      margin-right: 40px; }
 
 .add {
   position: absolute;
